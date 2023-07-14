@@ -11,7 +11,7 @@ const LayoutHeader: FC = () => {
       p={3}
     >
       <Link href="/">
-        <Typography color="primary.main">Mrafei's Portfolio</Typography>
+        <Typography color="primary.main">Mrafei&apos;s Portfolio</Typography>
       </Link>
 
       <Link href="https://github.com/mrafei">
