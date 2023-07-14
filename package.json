@@ -23,6 +23,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "next-bundle-analyzer": "^0.6.7",
     "prettier": "^3.0.0"
-  }
+  },
+  "sideEffects": false
 }

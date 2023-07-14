@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const shouldAnalyzeBundles = process.env.ANALYZE === "true";
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+let nextConfig = {};
+
+if (shouldAnalyzeBundles) {
+  const withNextBundleAnalyzer = require("next-bundle-analyzer")({enabled: true});
+  nextConfig = withNextBundleAnalyzer(nextConfig);
+}
+
+module.exports = nextConfig;
