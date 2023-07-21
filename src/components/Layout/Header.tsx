@@ -1,24 +1,19 @@
 import type { FC } from "react";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Link from "next/link";
 
 const LayoutHeader: FC = () => {
   return (
-    <Box
-      display="flex"
-      alignItems="center"
-      justifyContent="space-between"
-      p={3}
-    >
+    <div className="flex p-3 justify-between items-center">
       <Link href="/">
-        <Typography color="primary.main">Mrafei&apos;s Portfolio</Typography>
+        <span className="flex items-center text-cyan-400 text-xl font-bold">
+          Mrafei's Portfolio
+        </span>
       </Link>
 
-      <Link href="https://github.com/mrafei">
-        <Typography>GitHub</Typography>
+      <Link target="_blank" href="https://github.com/mrafei">
+        <span>GitHub</span>
       </Link>
-    </Box>
+    </div>
   );
 };
 export default LayoutHeader;
