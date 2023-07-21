@@ -6,7 +6,7 @@ const LayoutHeader: FC = () => {
     <div className="flex p-3 justify-between items-center">
       <Link href="/">
         <span className="flex items-center text-cyan-400 text-xl font-bold">
-          Mrafei's Portfolio
+          Mrafei&apos;s Portfolio
         </span>
       </Link>
 
